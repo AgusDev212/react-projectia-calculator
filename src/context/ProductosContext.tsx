@@ -7,15 +7,16 @@ export interface Producto {
 }
 
 const prodIniciales: Producto[] = [
-  { nombre: "AJI DE CARNE", precio: 15 },
-  { nombre: "BISTE", precio: 13 },
-  { nombre: "PUCHERO", precio: 20 },
-  { nombre: "ALBONDIGAS", precio: 13 },
+  { nombre: "AJI DE CARNE", precio: 18 },
+  { nombre: "BISTE", precio: 15 },
+  { nombre: "PUCHERO", precio: 18 },
+  { nombre: "ALBONDIGAS", precio: 16 },
   { nombre: "MILANESA", precio: 15 },
-  { nombre: "POLLO AL HORNO", precio: 15 },
+  { nombre: "POLLO AL HORNO", precio: 25 },
   { nombre: "MONDONGO", precio: 25 },
   { nombre: "FRICASE", precio: 25 },
-  { nombre: "SOPA", precio: 10 },
+  { nombre: "FRICASE DE POLLO", precio: 20 },
+  { nombre: "SOPA", precio: 7 },
 ];
 
 interface ProductosContextType {
