@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import { useTotal } from '../context/TotalContext';
-import './Cobrar.css';
+import React, { useState } from "react";
+import { useTotal } from "../context/TotalContext";
+import "./Cobrar.css";
 
 const Cobrar: React.FC = () => {
   const { total } = useTotal();
@@ -9,10 +9,12 @@ const Cobrar: React.FC = () => {
   const cambio = efectivo - total;
 
   const agregarBillete = (valor: number) => {
-    setEfectivo(e => e + valor);
+    setEfectivo((e) => e + valor);
   };
 
   const limpiarEfectivo = () => setEfectivo(0);
+
+  const billetes = [200, 100, 50, 20, 10];
 
   return (
     <div className="cobrar-container">
@@ -30,11 +32,23 @@ const Cobrar: React.FC = () => {
       </div>
       <div className="cobrar-field">
         <label htmlFor="efectivo">Efectivo cancelado:</label>
-        <div style={{ display: 'flex', gap: '0.5rem', marginBottom: '0.5rem' }}>
-          <button type="button" onClick={() => agregarBillete(50)}>50</button>
-          <button type="button" onClick={() => agregarBillete(100)}>100</button>
-          <button type="button" onClick={() => agregarBillete(200)}>200</button>
-          <button type="button" onClick={limpiarEfectivo} style={{ marginLeft: '1rem', color: '#d32f2f' }}>Limpiar</button>
+        <div style={{ display: "flex", gap: "0.5rem", marginBottom: "0.5rem" }}>
+          {billetes.map((billete) => (
+            <button
+              key={billete}
+              type="button"
+              onClick={() => agregarBillete(billete)}
+            >
+              {billete}
+            </button>
+          ))}
+          <button
+            type="button"
+            onClick={limpiarEfectivo}
+            style={{ marginLeft: "1rem", color: "#d32f2f" }}
+          >
+            Limpiar
+          </button>
         </div>
         <input
           id="efectivo"

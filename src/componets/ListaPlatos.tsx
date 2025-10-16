@@ -73,6 +73,7 @@ const ListaPlatos: React.FC = () => {
                         backgroundColor: "white",
                         color: "black",
                         textAlignLast: "center",
+                        fontSize: "1rem",
                       }}
                       onChange={(e) => {
                         const valor = e.target.value.replace(",", ".");
