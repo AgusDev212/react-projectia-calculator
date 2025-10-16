@@ -1,0 +1,62 @@
+/* Fondo para filas con cantidad mayor a cero */
+.calc-producto-fila:not(.sin-cantidad) {
+  background: #ffe082;
+  /* transition: background 0.3s; */
+}
+/* Efecto visual para fila presionada */
+.calc-producto-fila.pressed {
+  background: #ffe082 !important; /* Amarillo suave, diferente al azul de encabezados */
+  /* transform: scale(1.03);
+  transition: background 0.3s, transform 0.2s; */
+}
+/* No hay efecto hover, solo al clickear */
+/* Efecto visual para nombre presionado */
+.calc-producto-nombre.pressed {
+  background: #ffe082;
+  /* transition: background 0.3s; */
+}
+/* Estilos para la calculadora de platos */
+.calculator-container {
+  max-width: 400px;
+  /* margin: 2rem auto; */
+  /* padding: 0 1.5rem; */
+  background: #f9f9f9;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  color: black;
+  padding: 0.5rem;
+}
+.calculator-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+.calculator-table th,
+.calculator-table td {
+  padding: 0.5rem;
+  border-bottom: 1px solid #eee;
+  text-align: center;
+}
+.calculator-table th {
+  background: #e3f2fd;
+}
+.calc-btn {
+  background: #1976d2;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.3rem 0.7rem;
+  /* margin: 0 0.3rem; */
+  cursor: pointer;
+  font-size: 1rem;
+  /* margin-bottom: 10px; */
+}
+.calc-btn:hover {
+  background: #1565c0;
+}
+.calc-cantidad {
+  min-width: 2rem;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+}
