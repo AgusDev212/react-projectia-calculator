@@ -9,7 +9,7 @@ const Navbar: React.FC = () => {
         {/* <span className="navbar-title">Dish Calculator</span> */}
         <div className="navbar-links">
           <NavLink to="/" className="navbar-link">
-            Calculadora
+            Cuenta
           </NavLink>
           <NavLink to="/cobrar" className="navbar-link">
             Cobrar

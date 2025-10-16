@@ -35,14 +35,16 @@ const ListaPlatos: React.FC = () => {
           placeholder="Nombre"
           value={nombre.toUpperCase()}
           onChange={(e) => setNombre(e.target.value.toUpperCase())}
+          style={{ width: "120px" }}
         />
         <input
           type="number"
-          placeholder="Precio unitario"
+          placeholder="P. unit."
           value={precio}
           onChange={(e) => setPrecio(e.target.value)}
+          style={{ width: "30px" }}
         />
-        <button type="submit">Agregar</button>
+        <button type="submit">Add</button>
       </form>
       <table className="lista-platos-table">
         <thead>

@@ -18,7 +18,7 @@ const Cobrar: React.FC = () => {
 
   return (
     <div className="cobrar-container">
-      <h2>Cobrar</h2>
+      <h2>Efectuar cobro</h2>
       <div className="cobrar-field">
         <label htmlFor="total">Total de la venta:</label>
         <input
@@ -45,9 +45,13 @@ const Cobrar: React.FC = () => {
           <button
             type="button"
             onClick={limpiarEfectivo}
-            style={{ marginLeft: "1rem", color: "#d32f2f" }}
+            style={{
+              marginLeft: "1rem",
+              color: "#f5f2f2ff",
+              backgroundColor: "rgb(211, 47, 47)",
+            }}
           >
-            Limpiar
+            Borrar
           </button>
         </div>
         <input

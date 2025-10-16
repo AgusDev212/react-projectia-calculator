@@ -17,7 +17,7 @@
 }
 /* Estilos para la calculadora de platos */
 .calculator-container {
-  max-width: 400px;
+  max-width: 340px;
   /* margin: 2rem auto; */
   /* padding: 0 1.5rem; */
   background: #f9f9f9;
@@ -25,15 +25,20 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   color: black;
   padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
 }
 .calculator-table {
-  width: 100%;
+  width: 93%;
+  display: flex;
+  flex-direction: column;
   border-collapse: collapse;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
+
 .calculator-table th,
 .calculator-table td {
-  padding: 0.5rem;
+  padding: 0.35rem;
   border-bottom: 1px solid #eee;
   text-align: center;
 }
@@ -45,10 +50,10 @@
   color: #fff;
   border: none;
   border-radius: 4px;
-  padding: 0.3rem 0.7rem;
+  /* padding: 0.3rem 0.7rem; */
   /* margin: 0 0.3rem; */
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 0.9rem;
   /* margin-bottom: 10px; */
 }
 .calc-btn:hover {

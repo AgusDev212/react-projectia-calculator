@@ -41,14 +41,14 @@ const Calculator: React.FC = () => {
 
   return (
     <div className="calculator-container">
-      <h2>Calculadora</h2>
+      <h2>Cuenta</h2>
       <table className="calculator-table">
         <thead>
           <tr>
             <th style={{ width: "35%" }}>Producto</th>
             <th style={{ width: "15%" }}>PU</th>
             <th style={{ width: "10%" }}>Cant.</th>
-            <th style={{ width: "15%" }}>Subtotal</th>
+            <th style={{ width: "15%" }}>Total</th>
             <th style={{ width: "7%", textAlign: "center" }}></th>
           </tr>
         </thead>
@@ -100,9 +100,17 @@ const Calculator: React.FC = () => {
             );
           })}
         </tbody>
-        <tfoot>
+        <tfoot style={{ backgroundColor: "#f7edc1ff" }}>
           <tr>
-            <td colSpan={3} style={{ textAlign: "right", fontWeight: "bold" }}>
+            <td
+              colSpan={3}
+              style={{
+                textAlign: "right",
+                fontWeight: "bold",
+                width: "80%",
+                // backgroundColor: "#f5da64ff",
+              }}
+            >
               Total:
             </td>
             <td style={{ fontWeight: "bold" }}>${totalCalculado.toFixed(2)}</td>
