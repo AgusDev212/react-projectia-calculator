@@ -17,6 +17,8 @@ const prodIniciales: Producto[] = [
   { nombre: "FRICASE", precio: 25 },
   { nombre: "FRICASE DE POLLO", precio: 20 },
   { nombre: "SOPA", precio: 7 },
+  { nombre: "REFRESCOS EN VASO", precio: 3 },
+  { nombre: "GASEOSA PERSONAL", precio: 3 },
 ];
 
 interface ProductosContextType {
